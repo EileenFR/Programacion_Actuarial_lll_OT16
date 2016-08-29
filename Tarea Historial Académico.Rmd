@@ -1,0 +1,49 @@
+---
+title: "Historial Académico"
+author: "Eileen Flores Romero"
+date: "29 de agosto de 2016"
+output: html_document
+---
+
+##Primer Semestre
+
+* Programación Actuarial l               5
+* Matemáticas Básicas                    8
+* Problemas de Matemáticas Básicas       8
+* Introducción a la Profesión Actuarial  8
+* DHPC                                   9
+* Conceptos de Cálculo                   8
+
+
+##Segundo Semestre
+
+* Teoria de Ecuaciones                   5
+* Cálculo Diferencial                    8
+* Teoría del Interés I                   9
+* Geometría Analítica                   10
+* Formación Humana y Social              5
+* Microeconomía                          9
+
+
+##Tercer Semestre
+
+* Programación Actuarial l              10
+* Cálculo Integral                      10
+* Teoría del Interés II                  9
+* Macroeconomia                         10
+* Contabilidad General                   9
+* Teoría de Ecuaciones                   9
+
+
+##Cuarto  Semestre
+
+* Programación Actuarial II             10
+* Cálculo Diferencial en V. Variables    9
+* Álgebra Lineal                         9
+* Probabilidad I                         6
+* Formación Humana y Social              9
+* Ecuaciones Diferenciales              10
+
+
+
+
