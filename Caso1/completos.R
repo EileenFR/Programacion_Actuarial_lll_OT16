@@ -1,4 +1,4 @@
-setwd("C:/Users/EILEEN/Desktop/Programación Actuarial lll/Programacion_Actuarial_lll_OT16/specdata")
+setwd("C:/Users/EILEEN/Desktop/Programación Actuarial lll/Programacion_Actuarial_lll_OT16/Caso1/specdata")
 
 
 completos <- function(directorio,id=1:332){ 
