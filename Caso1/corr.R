@@ -1,12 +1,12 @@
 setwd("C:/Users/EILEEN/Desktop/Programación Actuarial lll/Programacion_Actuarial_lll_OT16/Caso1/specdata")
 
 
-
 corr <- function(directorio,horizonte=0){
   
   id2 <- vector("character")
   result <- vector("numeric")
-  x2 <- data.frame()
+  x2 <- vector("numeric")
+  x3 <- data.frame()
   
   
   for (i in 1:332){  
@@ -23,12 +23,13 @@ corr <- function(directorio,horizonte=0){
     x <- z[todos,]
     x1 <- nrow(x)
     
-    if (x1>=horizonte){x2 <- rbind(x2,x) }  
+    if (x1>=horizonte){ x3 <- cor(x) } 
+    x2 <- x3[1,2]
+    result <- c(result,x2)
     
   }  
-  result=cor(x2)
   result
 }
 
 
-corr("specdata",568)
+corr("specdata",150)

@@ -2,6 +2,7 @@ setwd("C:/Users/EILEEN/Desktop/Programación Actuarial lll/Programacion_Actuarial
 
 
 completos <- function(directorio,id=1:332){ 
+
   
   id2 <- vector("character")
   data <- data.frame(id="",nobs="")
@@ -39,4 +40,4 @@ completos <- function(directorio,id=1:332){
   
 }  
 
-completos("specdata", 1:15)
+completos("specdata", 3)

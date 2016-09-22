@@ -1,11 +1,9 @@
 setwd("C:/Users/EILEEN/Desktop/Programación Actuarial lll/Programacion_Actuarial_lll_OT16/Caso1/specdata")
 
-
-
-mediacontaminante <- function(directorio,contaminante,id=1:332){ 
+mediacontaminante <- function(directorio,contaminante,id=1:332){   
   
   id2 <- vector("character")
-  suma <- 0
+  x2 <- vector("numeric")
   
   for (i in id){ 
     
@@ -15,19 +13,17 @@ mediacontaminante <- function(directorio,contaminante,id=1:332){
     
     y <- read.csv(id2[i])
     z <- cbind(y[,contaminante])
-    medias <- mean(z,na.rm=TRUE)
     
-    suma <- suma + medias
+    x2 <- rbind(x2,z)
     
-    } 
-
-    result <- suma/length(id)
-    result
+    medias <- mean(x2,na.rm=TRUE)
+  }
+  medias
 
 }
 
   
-mediacontaminante("specdata","sulfate",160) 
+mediacontaminante("specdata","sulfate",70:72)   
 
 
 
