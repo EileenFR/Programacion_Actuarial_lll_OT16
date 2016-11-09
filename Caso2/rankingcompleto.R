@@ -97,7 +97,7 @@ rankhospital <- function(estado, resultado, num = "mejor")  {
   if(num == "mejor") { num <- 1 }
   if(num == "peor") { num <- length(s[d])}
   else if (num > length(s[d])) { return("NA")}
-  if(is.integer(num)==F ){stop("Solo enteros positivos, mejor y peor")}
+  #if(is.integer(num)==F ){stop("Solo enteros positivos, mejor y peor")}
 
   ss<-order(as.numeric(s[d,2]))
   fn <- s[d,1]
@@ -148,7 +148,7 @@ rankingcompleto <- function(resultado, num = "mejor")  {
   dd <- which(s[,2]==x2[i] & s[,3] != "Not Available")
   if(num == "mejor") { num <- 1 }
   if(num == "peor") { num <- length(s[dd])}
-  if(is.integer(num)==F ){stop("Solo enteros positivos, mejor y peor")}
+  #if(is.integer(num)==F ){stop("Solo enteros positivos, mejor y peor")}
   if(num > length(s[dd])) { 
     sol[i,1] <- "NA"
     sol[i,2] <- x2[i]
